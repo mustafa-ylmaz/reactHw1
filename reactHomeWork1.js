@@ -6,5 +6,5 @@ export default async (id) => {
 
     const {data:post} = await axios(
         "https://jsonplaceholder.typicode.com/posts?userId="+id)
-    return {post, user};
+    return {user, post};
 }
